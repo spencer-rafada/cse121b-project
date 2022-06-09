@@ -1,8 +1,37 @@
 body{
+    height: 100vh;
     text-align: center;
-    background-color: pink;
+    font-family: kanit;
+    background-color: white;
 }
 
-img{
-    width: 80%;
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.Info h1{
+    color: #FF0000;
+    font-size: 5em;
+    padding: 0em;
+    margin-bottom: -.25em;
+}
+
+.Space{
+    background-color: #7AFDD6;
+    height: 40em;
+    color: #FF5AFF;
+}
+
+.Space h1{
+    font-size: 8em;
+    padding: 0em;
+    margin-bottom: -.25em;
+}
+
+.Space ul{
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    padding: 1em;
 }

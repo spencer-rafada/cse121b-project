@@ -1,11 +1,5 @@
 // PROJECT: Display Astronauts in space
 
-// Create img HTML element, set its attribute, append to body
-const galaxyImage = document.createElement('img')
-galaxyImage.setAttribute('src', 'images/galaxy.jpg')
-galaxyImage.setAttribute('alt', 'Galaxy')
-document.body.appendChild(galaxyImage)
-
 // Declare date variable to hold current date
 const date = new Date()
 
@@ -101,16 +95,19 @@ function output()
         document.getElementById('astronauts').innerHTML = ""
         let astroInSpace = document.getElementById('astronauts')
         for(let i = 0; i < arrayAstronauts.people.length; i++)
-        {
-            let astroName = document.createElement('dt')
-            let craftName = document.createElement('dd')
-            astroName.textContent = arrayAstronauts.people[i].name
-            craftName.textContent = arrayAstronauts.people[i].craft
-            astroInSpace.append(astroName)
-            astroInSpace.append(craftName)
+        {   
+            let astroData = document.createElement('p')
+            astroData.textContent = arrayAstronauts.people[i].name + " - " + arrayAstronauts.people[i].craft
+            astroInSpace.append(astroData)
         }
     })
 }
 
+function clear()
+{
+    document.getElementById('astronauts').innerHTML = ""
+}
+
 // Event listener 
 document.getElementById('showAstronauts').addEventListener('click', output)
+document.getElementById('clearAstronauts').addEventListener('click', clear)

@@ -6,25 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Week 6 | Final Project</title>
     <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    <section>
-        <h2>
-            Today is <span id="message2"></span>.
-        </h2>
+    <section class = "Info">
+        <h1>CSE 121B Project</h1>
         <h3>
-            <span id="message"></span>
+            Today is <span id="message2"></span>. <span id="message"></span>
         </h3>
     </section>
-    <hr>
-    <section>
-        <p>
-            <label>Space is fun!</label>
-        </p>
-        <p>
-            <input type="button" id="showAstronauts" value="Show Astronauts in Space">
-        </p>
-        <div id="astronauts"></div>
+    <section class = "Space">
+        <div>
+            <h1>
+                Space is fun!
+            </h1>
+            <img src="img/astronaut1.png" alt="">
+            <img src="img/astronaut2.png" alt="">
+            <img src="img/astronaut3.png" alt="">
+            <img src="img/astronaut1.png" alt="">
+            <img src="img/astronaut2.png" alt="">
+            <div>
+                <input type="button" id="showAstronauts" value="Show Astronauts in Space">
+                <input type = "button" id = "clearAstronauts" value = "Clear">
+                </div>
+            </div>
+        <ul id = "astronauts">
+        </ul>
     </section>
     <script src = "task6.js"></script>
 </body>
